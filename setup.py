@@ -89,11 +89,11 @@ def compute_cmake_args():
         else:
             if "--user" in sys.argv:
                 cxxLibDir = os.path.abspath(
-                    os.path.join(_ctx.install_usersite, "opentimelineio", "cxx-libs")
+                    os.path.join(_ctx.install_usersite, "opentimelineio")
                 )
             else:
                 cxxLibDir = os.path.abspath(
-                    os.path.join(get_python_lib(), "opentimelineio", "cxx-libs")
+                    os.path.join(get_python_lib(), "opentimelineio")
                 )
             cmake_args += ['-DCMAKE_INSTALL_PREFIX=' + cxxLibDir,
                            '-DOTIO_CXX_NOINSTALL:BOOL=ON']
