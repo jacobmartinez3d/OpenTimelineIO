@@ -80,7 +80,7 @@ target_link_libraries(opentimelineio PUBLIC opentime)
 set_target_properties(opentimelineio PROPERTIES INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib"
 			MACOSX_RPATH true WINDOWS_EXPORT_ALL_SYMBOLS true)
 install(TARGETS opentimelineio 
-        RUNTIME DESTINATION bin
+        RUNTIME DESTINATION .
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib)
 
