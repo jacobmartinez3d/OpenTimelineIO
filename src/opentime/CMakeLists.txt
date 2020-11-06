@@ -15,7 +15,7 @@ target_include_directories(opentime PUBLIC "${PROJECT_SOURCE_DIR}/src")
 set_target_properties(opentime PROPERTIES INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib"
 			MACOSX_RPATH true WINDOWS_EXPORT_ALL_SYMBOLS true)
 install(TARGETS opentime
-        RUNTIME DESTINATION bin
+        RUNTIME DESTINATION .
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib)
 
