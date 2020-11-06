@@ -30,6 +30,5 @@ jobs:
     - name: Install Tox and any other packages
       run: |
         pip install tox
-        sudo apt install lcov
     - name: Build and Test
       run: tox -e py
